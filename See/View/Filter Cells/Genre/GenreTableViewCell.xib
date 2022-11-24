@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreTableViewCell" rowHeight="111" id="KGk-i7-Jjw" customClass="GenreTableViewCell" customModule="See" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdU-Sb-FXD">
+                        <rect key="frame" x="18" y="18" width="451" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="PCM-XA-wMd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                        <color key="textColor" name="Black Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afK-nY-YHD">
+                        <rect key="frame" x="24" y="46" width="439" height="18.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18.5" id="4TJ-xE-tbZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="15"/>
+                        <color key="textColor" name="Constant Dark Gray Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-right" translatesAutoresizingMaskIntoConstraints="NO" id="ckw-Ah-e3Z">
+                        <rect key="frame" x="431" y="18" width="48" height="48"/>
+                        <color key="tintColor" name="Black Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="0m4-2y-4th"/>
+                            <constraint firstAttribute="height" constant="48" id="Oc6-ym-T5k"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="afK-nY-YHD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="1y5-Qv-ezj"/>
+                    <constraint firstAttribute="trailing" secondItem="OdU-Sb-FXD" secondAttribute="trailing" constant="18" id="8IL-bf-qp1"/>
+                    <constraint firstItem="afK-nY-YHD" firstAttribute="top" secondItem="OdU-Sb-FXD" secondAttribute="bottom" constant="8" id="8mh-Ho-4CN"/>
+                    <constraint firstAttribute="trailing" secondItem="ckw-Ah-e3Z" secondAttribute="trailing" constant="8" id="FaU-ZS-Anw"/>
+                    <constraint firstItem="OdU-Sb-FXD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="GDE-nr-31X"/>
+                    <constraint firstAttribute="trailing" secondItem="afK-nY-YHD" secondAttribute="trailing" constant="24" id="M0S-WC-Xdt"/>
+                    <constraint firstItem="OdU-Sb-FXD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="WuR-Eg-RMF"/>
+                    <constraint firstItem="ckw-Ah-e3Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="cr4-VS-iHm"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="afK-nY-YHD" secondAttribute="bottom" constant="18" id="e44-ai-Nbq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="selectedGenreLabel" destination="afK-nY-YHD" id="raK-6y-a8c"/>
+            </connections>
+            <point key="canvasLocation" x="252.89855072463769" y="134.26339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron-right" width="24" height="24"/>
+        <namedColor name="Black Color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Constant Dark Gray Color">
+            <color red="0.55299997329711914" green="0.55299997329711914" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

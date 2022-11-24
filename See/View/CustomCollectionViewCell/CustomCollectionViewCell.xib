@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollectionViewCell" id="gTV-IL-0wX" userLabel="CustomCollectionViewCell" customClass="CustomCollectionViewCell" customModule="See" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="535"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="535"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clx-pp-cj3" userLabel="Main View">
+                        <rect key="frame" x="8" y="0.0" width="353" height="535"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-LY-J1o">
+                                <rect key="frame" x="0.0" y="0.0" width="353" height="455"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xvM-o0-gNM">
+                                <rect key="frame" x="166.5" y="217.5" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b2j-6n-XDx">
+                                <rect key="frame" x="8" y="459" width="337" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fyV-ZT-W0R">
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="29"/>
+                                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                                        <color key="textColor" name="Black Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grene" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="lmv-1a-XR8">
+                                        <rect key="frame" x="0.0" y="29" width="337" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="13"/>
+                                        <color key="textColor" name="Constant Dark Gray Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HCh-LY-J1o" secondAttribute="trailing" id="6B9-6x-QQg"/>
+                            <constraint firstItem="xvM-o0-gNM" firstAttribute="centerY" secondItem="HCh-LY-J1o" secondAttribute="centerY" id="IPf-qq-J5X"/>
+                            <constraint firstAttribute="trailing" secondItem="b2j-6n-XDx" secondAttribute="trailing" constant="8" id="NGF-T7-3c5"/>
+                            <constraint firstItem="HCh-LY-J1o" firstAttribute="top" secondItem="clx-pp-cj3" secondAttribute="top" id="PFg-yA-fQ8"/>
+                            <constraint firstItem="HCh-LY-J1o" firstAttribute="leading" secondItem="clx-pp-cj3" secondAttribute="leading" id="Pwu-hj-8Xr"/>
+                            <constraint firstItem="b2j-6n-XDx" firstAttribute="leading" secondItem="clx-pp-cj3" secondAttribute="leading" constant="8" id="RfG-R3-nMJ"/>
+                            <constraint firstItem="b2j-6n-XDx" firstAttribute="height" secondItem="clx-pp-cj3" secondAttribute="height" multiplier="0.11" id="aPz-iR-AXz"/>
+                            <constraint firstItem="xvM-o0-gNM" firstAttribute="centerX" secondItem="HCh-LY-J1o" secondAttribute="centerX" id="b2T-9J-mAM"/>
+                            <constraint firstItem="HCh-LY-J1o" firstAttribute="height" secondItem="clx-pp-cj3" secondAttribute="height" multiplier="0.85" id="gW6-VO-EcA"/>
+                            <constraint firstItem="b2j-6n-XDx" firstAttribute="top" secondItem="HCh-LY-J1o" secondAttribute="bottom" constant="4" id="rJt-PZ-UJk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="clx-pp-cj3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8FD-Ia-c6D"/>
+                <constraint firstItem="clx-pp-cj3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Hxw-yb-XOq"/>
+                <constraint firstAttribute="bottom" secondItem="clx-pp-cj3" secondAttribute="bottom" id="whd-CZ-hqq"/>
+                <constraint firstAttribute="trailing" secondItem="clx-pp-cj3" secondAttribute="trailing" constant="8" id="xHB-gJ-lhA"/>
+            </constraints>
+            <size key="customSize" width="369" height="535"/>
+            <connections>
+                <outlet property="genreLabel" destination="lmv-1a-XR8" id="UDt-Ze-hkh"/>
+                <outlet property="imageView" destination="HCh-LY-J1o" id="Fh0-0p-qtk"/>
+                <outlet property="loadingIndicator" destination="xvM-o0-gNM" id="ZY0-U5-EFW"/>
+                <outlet property="titleLabel" destination="fyV-ZT-W0R" id="evY-g3-Min"/>
+            </connections>
+            <point key="canvasLocation" x="358.69565217391306" y="397.43303571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon" width="1024" height="1024"/>
+        <namedColor name="Black Color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Constant Dark Gray Color">
+            <color red="0.55299997329711914" green="0.55299997329711914" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
