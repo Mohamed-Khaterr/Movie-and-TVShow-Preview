@@ -80,7 +80,7 @@ App linked with the browser/hyperLink to redirct to the app.
     - WebKit
     - UIActivityViewController
 
-- Data <img alt="Redirect Demo gif" src="preview/gif/redirectDemo.gif" width="" height="305" align="right" /> <img alt="Check for Internet Connection Demo gif" src="preview/gif/internetConnectionDemo.gif" width="" height="305" align="right"/>
+- Technologies <img alt="Redirect Demo gif" src="preview/gif/redirectDemo.gif" width="" height="305" align="right" /> <img alt="Check for Internet Connection Demo gif" src="preview/gif/internetConnectionDemo.gif" width="" height="305" align="right"/>
     - [TheMovieDatabase](https://www.themoviedb.org/settings/api) API
     - URL Session dataTask with URL & URLRequest
     - Encodable & Decodable
