@@ -87,6 +87,7 @@ App linked with the browser/hyperLink to redirct to the app.
     - Singleton Design Pattern
     - Delegate Desgin Pattern
     - GCD Dispatch Group
+    - NSCache for caching images
     - userDefaults
     - Custom [URL Scheme & Universal Link](https://benoitpasquier.com/deep-linking-url-scheme-ios/) to Redirct to the app
     - Checking for Internet Connection using NWPathMonitor
